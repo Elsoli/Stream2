@@ -33,16 +33,16 @@ public class Main {
         System.out.println();
         List<Person> filteredPersons1 =
                 persons.stream()
-                .filter(s -> (s.getEducation() == Education.HIGHER))
-                .filter(s -> ((s.getAge() > 18) && (s.getAge() < 65) && (s.getSex() == Sex.MAN)) ||
-                        (s.getAge() > 18) && (s.getAge() < 60) && (s.getSex() == Sex.WOMAN))
-                .sorted(Comparator.comparing(Person::getFamily))
-                 .limit(10)
-                .collect(Collectors.toList());
+                        .filter(s -> (s.getEducation() == Education.HIGHER))
+                        .filter(s -> ((s.getAge() > 18) && (s.getAge() < 65) && (s.getSex() == Sex.MAN)) ||
+                                (s.getAge() > 18) && (s.getAge() < 60) && (s.getSex() == Sex.WOMAN))
+                        .sorted(Comparator.comparing(Person::getFamily))
+                        .limit(10)
+                        .collect(Collectors.toList());
         System.out.println("Список работоспособных людей с высшим образованием :");
         filteredPersons1.forEach(System.out::println);
 
-        }
+    }
 }
 
 

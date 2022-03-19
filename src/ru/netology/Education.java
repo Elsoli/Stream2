@@ -1,9 +1,9 @@
 package ru.netology;
 
 public enum Education {
-        ELEMENTARY,
-        SECONDARY,
-        FURTHER,
-        HIGHER
-    }
+    ELEMENTARY,
+    SECONDARY,
+    FURTHER,
+    HIGHER
+}
 
